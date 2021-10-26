@@ -10,6 +10,7 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
     <nav> 
         <a href="./index.html">Home</a> </a>"
     <ul>
@@ -18,5 +19,11 @@
       <li><a href="../html3">3</a></li>
     </ul>
     </nav>
+    <h1>Land of Enchantmen</h1>
+    <img src="" alt="">
+    </header>
+
+    <h2>Here, We Call it Chile</h2>
+
   </body>
 </html>
