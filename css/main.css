@@ -5,3 +5,64 @@ video {
   width: 100%;
   height: auto;
 }
+/* Header and Nav Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.16);
+  padding: 1rem;
+  max-height: 3rem;
+}
+.title {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  min-width: fit-content;
+}
+.t {
+  height: 2rem;
+  width: 1rem;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* Main Layout Mobile */
+@media (max-width: 40rem) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    }
+  }
+}
+/* Main Layout Web */
+@media (min-width: 40rem) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
+  }
+  .main h2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+/* General Styles */
+.main h2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  min-width: 30rem;
+}
+
+.furry {
+  border: 1rem;
+  display: border;
+  border-color:pink;
+  background-color: #AB4242
+}
