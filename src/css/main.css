@@ -11,14 +11,33 @@ nav {
   justify-content: space-between;
   box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.16);
   padding: 1rem;
-  max-height: 3rem;
+  max-height: 3rem;  
+}
+nav a{
+  background-color: #bd7716;
+  text-decoration: none;
+  font-size: .9rem;
+  color:white;
+  border-radius:.3rem;
+  padding:.27rem;
+
+
+}
+nav a:hover {
+  background-color: #a06718;
+  padding:.5rem;
+
+
 }
 .title {
   font-size: 1.5rem;
+  font-family: ph;
   display: flex;
   flex-direction: row;
   justify-content: left;
   min-width: fit-content;
+  font-family: 'Bungee Inline', cursive;
+  color: #980000
 }
 .t {
   height: 2rem;
@@ -34,35 +53,134 @@ nav ul {
 }
 /* Main Layout Mobile */
 @media (max-width: 40rem) {
-  .main {
-    display: flex;
-    flex-direction: column;
-    }
+  .home  {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    height: 80vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  h2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    min-width: 35rem;
+    margin-top: 1rem;
+  }
+  .furry {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .chile {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .bison {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .gallery {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    max-width: 100vh;
+  }
+  .gallery {
+    max-width: 30vh;
+    overflow-x: scroll;
   }
 }
+
 /* Main Layout Web */
 @media (min-width: 40rem) {
-  .main {
+  article {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 2fr;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 85vh;
   }
-  .main h2 {
+  h2 {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .furry {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+  }
+  .chile {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: center;
+  }
+  .bison {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    text-align: center;
+  }
+  
   }
 }
-
 /* General Styles */
-.main h2 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  min-width: 30rem;
+
+
+div {
+  border-style: dotted;
+  border: 1rem;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-content: space-around;
+                   /* WHY NOT WORKING */
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+body{
+  background: linear-gradient(to bottom,#FFFFFF, #AB4242 )
+}
+h2, h3 {
+  font-family: 'Exo', sans-serif;
+  color:#A3640D
 }
 
-.furry {
-  border: 1rem;
-  display: border;
-  border-color:pink;
-  background-color: #AB4242
+/* Furry Friends */
+
+.interior {
+  margin: 1rem;
+  display: flex; 
+  flex-direction: column;
 }
+img .furry {
+  width: 100%;
+  height: auto;
+}
+
+/* CHILE */
+h3 {
+  border-style: solid;
+  border-color:rgb(165, 112, 15);
+  border-radius: .3rem;
+  padding:.25rem;
+  margin: 1rem;
+}
+p {margin:1rem;}
