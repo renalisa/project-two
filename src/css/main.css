@@ -6,29 +6,51 @@ video {
   height: auto;
 }
 /* Header and Nav Bar */
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.15);
+  min-height: 2.25rem;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  display: flex;
+}
 nav {
   display: flex;
   justify-content: space-between;
   box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.16);
   padding: 1rem;
-  max-height: 3rem;  
+  max-height: 3rem;
 }
-nav a{
+nav a {
   background-color: #bd7716;
   text-decoration: none;
-  font-size: .9rem;
-  color:white;
-  border-radius:.3rem;
-  padding:.27rem;
-
-
+  font-size: 0.8rem;
+  color: white;
+  border-radius: 0.3rem;
+  padding: 0.27rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 600;
 }
 nav a:hover {
   background-color: #a06718;
-  padding:.5rem;
-
-
+  padding: 0.5rem;
 }
+/*LAND OF ENCHANTMENT*/
 .title {
   font-size: 1.5rem;
   font-family: ph;
@@ -36,8 +58,8 @@ nav a:hover {
   flex-direction: row;
   justify-content: left;
   min-width: fit-content;
-  font-family: 'Bungee Inline', cursive;
-  color: #980000
+  font-family: "Bungee Inline", cursive;
+  color: #980000;
 }
 .t {
   height: 2rem;
@@ -53,12 +75,12 @@ nav ul {
 }
 /* Main Layout Mobile */
 @media (max-width: 40rem) {
-  .home  {
-    display: grid;
+  .home {
+    /* display: grid; */
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 1rem;
-    height: 80vh;
+    min-height: 80vh;
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -92,11 +114,34 @@ nav ul {
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
-    max-width: 100vh;
+    width: 100vh;
   }
-  .gallery {
-    max-width: 30vh;
-    overflow-x: scroll;
+}
+
+.gallery {
+  overflow-x: scroll;
+}
+.photos {
+  text-align: center;
+  border-style: solid;
+  border-color: rgb(165, 112, 15);
+  border-radius: 0.25rem;
+  min-width: 35rem;
+}
+@media (max-width: 40rem) {
+  .navbar ul {
+    display: none;
+    background: #efefef;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .navbar ul.active {
+    display: flex;
   }
 }
 
@@ -109,7 +154,7 @@ nav ul {
     gap: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    height: 85vh;
+    min-height: 85vh;
   }
   h2 {
     grid-column-start: 2;
@@ -134,40 +179,56 @@ nav ul {
     grid-column-end: 7;
     text-align: center;
   }
-  
+  .navbar button {
+    display: none;
+  }
+  .navbar ul {
+    display: flex;
+    gap: 1rem;
   }
 }
-/* General Styles */
 
+/* General Styles */
 
 div {
   border-style: dotted;
   border: 1rem;
 }
 .gallery {
+  margin: 1rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
+
   align-content: space-around;
-                   /* WHY NOT WORKING */
 }
+/* WHY NOT WORKING */
+
 .gallery img {
   width: 100%;
   height: auto;
 }
-body{
-  background: linear-gradient(to bottom,#FFFFFF, #AB4242 )
+body {
+  background: linear-gradient(to bottom, #ffffff, #792020);
+  background-attachment: fixed;
+  background-repeat: none;
 }
-h2, h3 {
-  font-family: 'Exo', sans-serif;
-  color:#A3640D
+h2,
+h3,
+h3 a {
+  font-family: "Exo", sans-serif;
+  color: #a3640d;
+  text-decoration: none;
 }
 
 /* Furry Friends */
+h2 {
+  margin-left: 1rem;
+}
 
 .interior {
   margin: 1rem;
-  display: flex; 
+  display: flex;
   flex-direction: column;
 }
 img .furry {
@@ -178,9 +239,23 @@ img .furry {
 /* CHILE */
 h3 {
   border-style: solid;
-  border-color:rgb(165, 112, 15);
-  border-radius: .3rem;
-  padding:.25rem;
+  border-color: rgb(165, 112, 15);
+  border-radius: 0.3rem;
+  padding: 0.25rem;
   margin: 1rem;
 }
-p {margin:1rem;}
+
+p {
+  margin: 1rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 600;
+  color: rgb(54, 50, 44);
+}
+
+/* BISON */
+.video
+
+/*FOOTER*/
+footer {
+  text-align: center;
+}

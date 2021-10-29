@@ -7,6 +7,12 @@
       href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,8 +23,9 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <a href="./index.html">Home</a>
+
         <h1 class="title">
           Land of Enchantmen
           <img src="nm_flag_crop.jpg" class="t" alt="t" />
@@ -28,44 +35,74 @@
           <li><a href="./2.html">Here, We Call it Chile</a></li>
           <li><a href="./3.html">Where the Bison Roam</a></li>
         </ul>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-menu"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </nav>
     </header>
 
     <article class="home">
       <h2>Putting the "Land" in the Land of Enchantment</h2>
       <div class="furry">
-        <h3>Our Furry Friends, The Prairie Dogs</h3>
+        <h3>
+          <a href="./1.html">Our Furry Friends, The Prairie Dogs</a>
+        </h3>
+        <img src="./furry.jpeg" alt="Close up image of chubby prairie dog." />
       </div>
       <div class="chile">
-        <h3>Here, We Call it Chile</h3>
-      </div>
-      <div class="bison">
-        <h3>Where the Bison Roam</h3>
-      </div>
-
-      <div class="gallery">
-        <img
-          src="./abq_flag.jpg"
-          alt="Photo of New Mexican flag against a blue sky."
-        />
-        <img
-          src="./chile1.jpg"
-          alt="Gilbert Sanchez, Operations Manager of Sadie's of New Mexico, reaches into a chile roaster to take out the roasted chiles."
-        />
+        <h3><a href="./2.html">Here, We Call it Chile</a></h3>
         <img
           src="./chile2.jpg"
-          alt="A close up shot of vibrant red and green chiles, through the mesh metal of the chile roaster."
-        />
-        <img
-          src="./chile3.jpg"
-          alt="A detail shot of the residue left at the bottom of the chile roaster from the flakes of chile burnt off."
-        />
-        <img
-          src="./hiccup1.jpg"
-          alt="Hiccup, a tan mini horse, stands tall for a portrait. "
+          alt="Close up image of red and green chile, through the mesh of a chile roaster."
         />
       </div>
+      <div class="bison">
+        <h3><a href="./3.html">Where the Bison Roam</a></h3>
+        <img src="./bison.jpg" alt="Bison in the morning light." />
+      </div>
     </article>
-    <footer></footer>
+    <h2 class="photos">Gallery</h2>
+    <div class="gallery">
+      <img
+        src="./abq_flag.jpg"
+        alt="Photo of New Mexican flag against a blue sky."
+      />
+      <img
+        src="./chile1.jpg"
+        alt="Gilbert Sanchez, Operations Manager of Sadie's of New Mexico, reaches into a chile roaster to take out the roasted chiles."
+      />
+      <img
+        src="./chile2.jpg"
+        alt="A close up shot of vibrant red and green chiles, through the mesh metal of the chile roaster."
+      />
+      <img
+        src="./chile3.jpg"
+        alt="A detail shot of the residue left at the bottom of the chile roaster from the flakes of chile burnt off."
+      />
+      <img
+        src="./hiccup1.jpg"
+        alt="Hiccup, a tan mini horse, stands tall for a portrait. "
+      />
+    </div>
+
+    <footer>
+      <address>https://renalisa.github.io/project-two/</address>
+      Copyright 2021 Renata Schmidt
+    </footer>
   </body>
 </html>
