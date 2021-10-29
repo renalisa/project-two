@@ -127,6 +127,8 @@ nav ul {
   border-color: rgb(165, 112, 15);
   border-radius: 0.25rem;
   min-width: 35rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 @media (max-width: 40rem) {
   .navbar ul {
@@ -205,11 +207,11 @@ div {
 /* WHY NOT WORKING */
 
 .gallery img {
-  width: 100%;
+  width: 30vh;
   height: auto;
 }
 body {
-  background: linear-gradient(to bottom, #ffffff, #792020);
+  background: linear-gradient(to bottom, #ffffff, #c27668);
   background-attachment: fixed;
   background-repeat: none;
 }
@@ -223,7 +225,7 @@ h3 a {
 
 /* Furry Friends */
 h2 {
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 
 .interior {
@@ -245,7 +247,8 @@ h3 {
   margin: 1rem;
 }
 
-p {
+p,
+address {
   margin: 1rem;
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 600;
